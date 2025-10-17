@@ -860,12 +860,12 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size: 48px
+  global_font_size: 16px
   code_font_size:
   font_family: 
+  - "Microsoft YaHei"
   - "SimHei"
   - "Microsoft JhengHei"
-  - "Microsoft YaHei"
   - apple-system
   - BlinkMacSystemFont
   - "Segoe UI"
