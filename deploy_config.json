@@ -1,0 +1,7 @@
+{
+  "repository": "Yyexu/Yxblog",
+  "branch": "main",
+  "message": "博客更新: {{ now(\"YYYY-MM-DD HH:mm:ss\") }}",
+  "token": "",
+  "lastDeployTime": "2025-10-17T19:41:28.545Z"
+}
