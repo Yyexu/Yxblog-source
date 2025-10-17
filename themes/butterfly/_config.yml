@@ -863,9 +863,9 @@ font:
   global_font_size: 48px
   code_font_size:
   font_family: 
+  - "Microsoft JhengHei"
   - "Microsoft YaHei"
   - "SimSun"
-  - "Microsoft JhengHei"
   - apple-system
   - BlinkMacSystemFont
   - "Segoe UI"
