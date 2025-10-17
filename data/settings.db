@@ -1,3 +1,0 @@
-{"type":"storage","storageConfig":{"type":"local","customPath":"images","aliyun":{},"qiniu":{},"tencent":{}},"createdAt":{"$$date":1755576416632},"updatedAt":{"$$date":1755576416632},"_id":"2XpSkV5CXvbBsFeP"}
-{"type":"system","jwtSecret":"dd1111cdc130691ca62205caa843d081727eb726869f9bd5c759106e79452f341f3f634805a878bca7da532f6e8b474b550018068539539270751b12dd0de0db","createdAt":{"$$date":1755230061521},"updatedAt":{"$$date":1755230091168},"_id":"Bg1hwsRl0rURpeaA"}
-{"username":"2363429019","menuCollapsed":false,"createdAt":{"$$date":1755230061519},"updatedAt":{"$$date":1755230091153},"_id":"bjMu6Zm5XHGt7X79"}
