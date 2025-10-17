@@ -863,7 +863,7 @@ font:
   global_font_size: 48px
   code_font_size:
   font_family: 
-  - "SimSun"
+  - "SimHei"
   - "Microsoft JhengHei"
   - "Microsoft YaHei"
   - apple-system
