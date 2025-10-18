@@ -21,7 +21,7 @@ menu:
   主页: / || fas fa-home
   时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
-  分类: /分类/ || fas fa-folder-open
+  分类: /category/ || fas fa-folder-open
   清单||fas fa-list:
     音乐: /music/ || fas fa-music
     电影: /movies/ || fas fa-video
@@ -54,7 +54,7 @@ code_blocks:
 social:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
-
+  fab fa-github: https://github.com/Yyexu || Github || '#24292e'
 # --------------------------------------
 # Image Settings
 # --------------------------------------
@@ -63,43 +63,44 @@ favicon: /img/favicon.png
 
 avatar:
   img: https://yxblog.xyz/images/web/headshot.jpg?_t=1755349067059
-  effect: false
+  effect: true
 
 # Disable all banner images
 disable_top_img: false
 
-# If the banner of page not setting, it will show the default_top_img
+# 默认横幅
 default_top_img: https://yxblog.xyz/images/web/head.jpg?_t=1755446333013
 
-# The banner image of index page
+# 主页的横幅照片
 index_img: https://yxblog.xyz/images/web/fm.jpeg?_t=1755352233240
 
-# The banner image of archive page
+# 归档页的横幅
 archive_img:
 
-# Note: tag page, not tags page
+# 单个标签的横幅
 tag_img:
 
-# The banner image of tag page, you can set the banner image for each tag
+# 标签页的横幅，也可以设置每一个的标签的
 # Format:
 #  - tag name: xxxxx
 tag_per_img:
 
-# Note: category page, not categories page
+# 分类页
 category_img:
 
-# The banner image of category page, you can set the banner image for each category
+# 单个分类的横幅
 # Format:
 #  - category name: xxxxx
 category_per_img:
 
-# The background image of footer
+# 页脚背景图片
 footer_img: false
 
-# Website Background
-# Can set it to color or image url
-background:
+# 网站背景 
+# 可以设置为url或者颜色
+background: White
 
+#文章封面
 cover:
   # Disable the cover or not
   index_enable: true
@@ -109,14 +110,14 @@ cover:
   default_cover:
     # - xxx.jpg
 
-# Replace Broken Images
+# 替换损坏的图片
 error_img:
   flink: /img/friend_404.gif
   post_page: /img/404.jpg
 
-# A simple 404 page
+# 404页面
 error_404:
-  enable: false
+  enable: true
   subtitle: 'Page Not Found'
   background: /img/error-page.png
 
@@ -128,7 +129,7 @@ post_meta:
     # Choose: date / relative
     date_format: date
     categories: true
-    tags: false
+    tags: true
     label: true
   post:
     # Choose: left / center
@@ -145,6 +146,7 @@ post_meta:
 # Index page settings
 # --------------------------------------
 
+#网站的头图
 # The top_img settings of home page
 # default: top img - full screen, site info - middle
 # The position of site info, eg: 300px/300em/300rem/10%
@@ -152,7 +154,7 @@ index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem
 index_top_img_height:
 
-# The subtitle on homepage
+# 副标题
 subtitle:
   enable: true
   # Typewriter Effect
@@ -171,6 +173,7 @@ subtitle:
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub: 测试副标题，不知道写什么
 
+#首页文章布局
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
 # 2: Cover on the right, info on the left
@@ -181,6 +184,7 @@ subtitle:
 # 7: Masonry layout - Info displayed on the cover
 index_layout: 3
 
+#文章的简介模式
 # Display the article introduction on homepage
 # 1: description
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)
@@ -192,26 +196,26 @@ index_post_content:
   length: 500
 
 # --------------------------------------
-# Post Settings
+# 文章设置
 # --------------------------------------
 
 toc:
   post: true
-  page: false
-  number: true
-  expand: false
+  page: true
+  number: false
+  expand: true
   # Only for post
   style_simple: false
-  scroll_percent: true
+  scroll_percent: false
 
 post_copyright:
   enable: true
   decode: false
-  author_href:
+  author_href: https://github.com/Yyexu
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-# Sponsor/reward
+# 文章打赏设置
 reward:
   enable: false
   text:
@@ -245,7 +249,7 @@ related_post:
 # false: disable pagination
 post_pagination: 1
 
-# Displays outdated notice for a post
+# 文章过期提醒
 noticeOutdate:
   enable: false
   # Style: simple / flat
@@ -258,7 +262,7 @@ noticeOutdate:
   message_next: days since the last update, the content of the article may be outdated.
 
 # --------------------------------------
-# Footer Settings
+# 页脚设置
 # --------------------------------------
 footer:
   nav:
@@ -314,7 +318,7 @@ footer:
   custom_text:
 
 # --------------------------------------
-# Aside Settings
+# 侧边栏设置
 # --------------------------------------
 
 aside:
@@ -401,7 +405,7 @@ aside:
     runtime_date:
 
 # --------------------------------------
-# Bottom right button
+# 右下角按钮设置
 # --------------------------------------
 
 # The distance between the bottom right button and the bottom (default unit: px)
@@ -409,7 +413,7 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -424,7 +428,7 @@ translate:
 # Read Mode
 readmode: true
 
-# Dark Mode
+# 黑夜模式
 darkmode:
   enable: true
   # Toggle Button to switch dark/light mode
@@ -438,7 +442,7 @@ darkmode:
   start:
   end:
 
-# Show scroll percent in scroll-to-top button
+# 显示滚动百分比
 rightside_scroll_percent: false
 
 # Don't modify the following settings unless you know how they work
@@ -455,7 +459,7 @@ rightside_item_order:
 rightside_config_animation: true
 
 # --------------------------------------
-# Global Settings
+# 全局设置
 # --------------------------------------
 
 anchor:
@@ -470,7 +474,7 @@ copy:
   enable: true
   # Add the copyright information after copied content
   copyright:
-    enable: false
+    enable: true
     limit_count: 150
 
 # Need to install the hexo-wordcount plugin
@@ -566,7 +570,7 @@ share:
     item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # --------------------------------------
-# Comments System
+# 评论系统
 # --------------------------------------
 
 comments:
@@ -696,7 +700,7 @@ artalk:
   option:
 
 # --------------------------------------
-# Chat Services
+# 聊天服务系统
 # --------------------------------------
 
 chat:
@@ -722,7 +726,7 @@ crisp:
   website_id:
 
 # --------------------------------------
-# Analysis
+# 分析服务系统
 # --------------------------------------
 
 # https://tongji.baidu.com/web/welcome/login
@@ -895,7 +899,7 @@ activate_power_mode:
   shake: true
   mobile: false
 
-# Background effects
+# 背景效果
 # --------------------------------------
 
 # canvas_ribbon
@@ -929,18 +933,18 @@ canvas_nest:
   count: 99
   mobile: false
 
-# Mouse click effects: fireworks
+# 鼠标点击 烟花
 fireworks:
   enable: false
   zIndex: 9999
   mobile: false
 
-# Mouse click effects: Heart symbol
+# Mouse click effects: 心形
 click_heart:
   enable: false
   mobile: false
 
-# Mouse click effects: words
+# Mouse click effects: 文字
 clickShowText:
   enable: false
   text:
@@ -952,7 +956,7 @@ clickShowText:
   mobile: false
 
 # --------------------------------------
-# Lightbox Settings
+# 灯箱设置
 # --------------------------------------
 
 # Choose: fancybox / medium_zoom
@@ -962,7 +966,7 @@ clickShowText:
 lightbox:
 
 # --------------------------------------
-# Tag Plugins settings
+# 标签外挂设置
 # --------------------------------------
 
 # Series
@@ -1054,7 +1058,7 @@ snackbar:
 # https://instant.page/
 instantpage: false
 
-# Lazyload
+# 懒加载
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: false
